@@ -1,0 +1,15 @@
+{
+  "name": "Course_project",
+  "version": "1.0.0",
+  "dependencies": {},
+  "scripts": {
+    "scss": "gulp sass",
+    "scss:watch": "gulp sass:watch"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0"
+  }
+}
