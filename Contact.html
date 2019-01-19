@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <script defer src="script.js"></script>
 
 </head>
 <body>
-<nav class="top-menu">
-    <ul class="menu-main">
-        <li class="left-item"><a href="index.html">Home</a></li>
-        <li class="left-item"><a href="Directions.html">Directions</a></li>
-        <li class="right-item"><a href="Gallery.html">Gallery</a></li>
-        <li class="right-item"><a href="Contact.html">Contact</a></li>
+<header>
+    <div class="navbar-logo">
+        <img src="ico/logo2.png" width="60" height="60">
+    </div>
+    <nav>
+        <div class="menu-main" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="Directions.html">Directions</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact.html">Contact</a>
+            <a href="#" id = "menu" class="icon">&#9776</a>
+        </div>
+    </nav>
+</header>
+<footer>
+    <form>
+        <div class="request">
+            <label for="Name">Имя</label>
+            <input type="text" id="Name">
+            <label for="Surname">Фамилия</label>
+            <input type="text" id="Surname">
+            <label for="Email">E-mail</label>
+            <input type="email" id="Email">
+            <label for="Number" >Номер телефона</label>
+            <input type="number" id="Number">
+            <label for="Comments">Комментарии:</label>
+            <textarea id="Comments"></textarea>
+            <input type="submit" class="Submit">
+        </div>
+    </form>
 
-    </ul>
-    <a class="navbar-logo" href=""><img src="ico/logo2.png" width="50" height="50"></a>
-</nav>
+
+</footer>
+
 </body>
 </html>
