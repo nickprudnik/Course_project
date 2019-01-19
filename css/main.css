@@ -109,3 +109,20 @@ input{
 img{
   float: right;
 }
+.confirm{
+    width: 250px;
+    height: 75px;
+    top: -50px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin: auto;
+    /*visibility: hidden;*/
+}
+.BConfirm{
+    display: inline-block;
+}
+
+
+
+
+
