@@ -5,7 +5,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -37,17 +37,16 @@
             <input type="number" id="Number">
             <label for="Comments">Комментарии:</label>
             <textarea id="Comments"></textarea>
-            <div class="confirm">
-                <span>Подтверить?</span>
-                <div class="BConfirm">
-                    <button>ОК</button>
-                    <button>Ну нах</button>
-                </div>
-            </div>
-            <input type="submit" class="Submit">
         </div>
     </form>
-    <div class="Confir"></div>
+    <a href="#openModal"><input type="submit" class="Sumbit" onclick="store()"></a>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <h2><span id="request_name"></span> ваша заявка принята</h2>
+            <a href="#close" title="Закрыть" class="close">ОК</a>
+            <a href="#close" title="Закрыть" class="close" style="float:right">Я не уверен</a>
+        </div>
+    </div>
 
 
 </article>
