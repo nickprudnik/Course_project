@@ -3,6 +3,7 @@ html {
   min-width: 400px;
   margin-top: 20px;
   padding: 0;
+  font-family: 'Jura', sans-serif;
 
   //background-color: rgba(238, 223, 203, 0.41);
 
@@ -19,11 +20,10 @@ header{
   background: rgba(34, 34, 34, 0.2);
   display: flex;
   background: url(../image/backg.jpg);
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .navbar-logo {
-  border: 1px solid white;
-  border-radius: 50%;
   cursor: pointer;
   margin-top: auto;
   margin-bottom: auto;
@@ -56,7 +56,9 @@ nav{
 
 footer {
   font-size: 1.2em;
-  margin: 30px; }
+  margin: 30px;
+  bottom: 0;
+}
 
 
 
@@ -93,6 +95,31 @@ footer {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+@media (min-width: 940px ) {
+  .gallCont ul li{
+    width: 16%;
+  }
+}
+@media (max-width: 940px ) {
+  .gallCont ul li{
+    width: 21%;
+  }
+}
+@media (max-width: 720px) {
+  .gallCont ul li{
+    width: 29.333%;
+  }
+}
+@media (max-width: 530px) {
+  .gallCont ul li{
+    width: 46%;
+  }
+}
+@media (max-width: 410px) {
+  .gallCont ul li{
+    width: 96%;
   }
 }
 
@@ -145,6 +172,7 @@ footer {
     border: 3px solid black;
     border-radius: 6px;
     background: url(../image/guandun.jpg);
+    background-size: cover;
     height: 250px;
     display: grid;
     grid-auto-rows: 30px 1fr 35px;
@@ -172,12 +200,23 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  .dirText{
+    color: white;
+    background-color: rgba(153, 153, 153, 0.7);
+    border: 1px solid rgba(153, 153, 153, 0.57);
+    border-radius: 4px;
+    padding: 2px;
+  }
+
 }
 
 article{
   margin-top: 30px;
   margin-right: 50px;
   margin-left: 50px;
+  border: 3px solid black;
+  border-radius: 7px;
+  padding: 15px;
 }
 footer{
   display: block;
@@ -189,3 +228,38 @@ footer{
     position: center;
   }
 }
+.rightimg{
+  float: left;
+  margin: 7px 7px 7px 2px;
+  border: 3px solid black;
+  max-width: 100%;
+}
+.leftimg{
+  float: right;
+  margin: 7px 2px 7px 7px;
+  border: 3px solid black;
+  max-width: 100%;
+}
+.secHome{
+  margin: 10px;
+  padding: 4px;
+  border: 3px solid black;
+  border-radius: 4px;
+}
+
+.gallCont{
+  width: 80%;
+  margin: 30px auto;
+  ul li{
+    list-style: none;
+    float: left;
+    margin: 2% 2% 40px 2%;
+  }
+  ul li a img{
+    max-width: 100%;
+  }
+}
+#Comments{
+  margin-bottom: 30px;
+}
+
