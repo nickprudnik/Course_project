@@ -40,12 +40,12 @@
             <textarea id="Comments"></textarea>
         </div>
     </form>
-    <a href="#openModal"><input type="submit" class="Sumbit" onclick="store()"></a>
+    <input type="submit" class="Sumbit" id="submit">
     <div id="openModal" class="modalDialog">
-        <div>
-            <h2><span id="request_name"></span> ваша заявка принята</h2>
-            <a href="#close" title="Закрыть" class="close">ОК</a>
-            <a href="#close" title="Закрыть" class="close" style="float:right">Я не уверен</a>
+        <div class="modal">
+            <h2 id="request_name"></h2>
+            <input type="submit" title="ОК" id="close" value="OK">
+            <input type="submit" title="ОК" id="too_close" value="НУ НАХ" style="float:right">
         </div>
     </div>
 
