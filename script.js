@@ -10,19 +10,19 @@ x.className = "menu-main";
 } 
 };
 document.getElementById("submit").onclick = function (){
-    let error = false;
-    document.getElementById("Name").classList.remove("error");
-    document.getElementById("errorName").style.display = "none";
-    document.getElementById("Surname").classList.remove("error");
-    document.getElementById("errorSurname").style.display = "none";
-    document.getElementById("Email").classList.remove("error");
-    document.getElementById("errorEmail").style.display = "none";
-    document.getElementById("Number").classList.remove("error");
-    document.getElementById("errorNumber").style.display = "none";
-    let inputName= document.getElementById("Name");
+    let error = false
+    document.getElementById("Name").classList.remove("error")
+    document.getElementById("errorName").style.display = "none"
+    document.getElementById("Surname").classList.remove("error")
+    document.getElementById("errorSurname").style.display = "none"
+    document.getElementById("Email").classList.remove("error")
+    document.getElementById("errorEmail").style.display = "none"
+    document.getElementById("Number").classList.remove("error")
+    document.getElementById("errorNumber").style.display = "none"
+    let inputName= document.getElementById("Name")
     if (inputName.value.length < 2){
         error = true;
-        document.getElementById("Name").classList.add("error");
+        document.getElementById("Name").classList.add("error")
         document.getElementById("errorName").style.display = "block"
     }
     let inputSurname = document.getElementById("Surname");
