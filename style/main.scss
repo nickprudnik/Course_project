@@ -2,11 +2,38 @@ html {
   height: 100%;
   min-width: 400px;
   margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
   padding: 0;
   font-family: 'Jura', sans-serif;
+}
 
-  //background-color: rgba(238, 223, 203, 0.41);
+.headInfo{
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  .info{
+    border: 3px solid black;
+    margin: 50px 10px 0 10px ;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    color: white;
+    background: url("../image/vector-leaf-pattern_3143891.jpg");
+    background-size: cover;
 
+  }
+  .Apltour{
+    width: 200px;
+    height: 50px;
+    background-color: rgba(145, 0, 0, 0.78);
+    border: 1px solid rgba(145, 0, 0, 0.78);
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2em;
+    position: center;
+    margin: 50px auto;
+  }
 }
 
 a{
@@ -19,8 +46,11 @@ header{
   width: 100%;
   background: rgba(34, 34, 34, 0.2);
   display: flex;
-  background: url(../image/backg.jpg);
+  background: url(../image/header.jpg);
+  background-position: center;
+  background-size: cover;
   font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 0.8em;
 }
 
 .navbar-logo {
@@ -62,9 +92,19 @@ footer {
 
 
 
-@media (max-width: 830px) {
+@media (max-width: 850px) {
+
+  html{
+    margin-left: 10px;
+    margin-right: 10px;
+  };
   .menu-main a{
     display: none;
+  }
+  .navbar-logo > img{
+    width: 85px;
+    height: 85px;
+    margin-left: 0;
   }
 
   .menu-main  a.icon{
@@ -158,15 +198,16 @@ footer {
   background: -webkit-linear-gradient(#fff, #999);
   background: -o-linear-gradient(#fff, #999);
 }
-.grid{
+.grid {
   margin-top: 30px;
   margin-left: 30px;
   margin-right: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   grid-gap: 20px;
-  .direct{
-    padding:  5px;
+
+  .direct {
+    padding: 5px;
     border: 3px solid black;
     border-radius: 6px;
     background: url(../image/guandun.jpg);
@@ -179,7 +220,8 @@ footer {
     align-items: center;
 
   }
-  .more{
+}
+.more{
     width: 100px;
     height: 30px;
     background-color: rgba(145, 0, 0, 0.78);
@@ -206,7 +248,7 @@ footer {
     padding: 2px;
   }
 
-}
+
 
 article{
   margin-top: 30px;
@@ -215,6 +257,7 @@ article{
   border: 3px solid black;
   border-radius: 7px;
   padding: 15px;
+  background: rgba(0, 0, 0, 0.06);
 }
 footer{
   display: block;
@@ -257,7 +300,7 @@ footer{
     max-width: 100%;
   }
 }
-#Comments{
+#DirForm{
   margin-bottom: 30px;
 }
 @keyframes fade-in {
@@ -276,4 +319,9 @@ footer{
   width: auto;
   animation: fade-in .3s ease;
 }
+.request >label{
+  margin-top: 10px;
+}
+
+
 

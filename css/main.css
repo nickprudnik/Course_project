@@ -2,8 +2,34 @@ html {
   height: 100%;
   min-width: 400px;
   margin-top: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
   padding: 0;
   font-family: 'Jura', sans-serif; }
+
+.headInfo {
+  display: block;
+  text-align: center;
+  margin-top: 50px; }
+  .headInfo .info {
+    border: 3px solid black;
+    margin: 50px 10px 0 10px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    color: white;
+    background: url("../image/vector-leaf-pattern_3143891.jpg");
+    background-size: cover; }
+  .headInfo .Apltour {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(145, 0, 0, 0.78);
+    border: 1px solid rgba(145, 0, 0, 0.78);
+    border-radius: 4px;
+    color: white;
+    font-size: 1.2em;
+    position: center;
+    margin: 50px auto; }
 
 a {
   text-decoration: none; }
@@ -14,8 +40,11 @@ header {
   width: 100%;
   background: rgba(34, 34, 34, 0.2);
   display: flex;
-  background: url(../image/backg.jpg);
-  font-family: 'Montserrat Alternates', sans-serif; }
+  background: url(../image/header.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 0.8em; }
 
 .navbar-logo {
   cursor: pointer;
@@ -49,9 +78,16 @@ footer {
   margin: 30px;
   bottom: 0; }
 
-@media (max-width: 830px) {
+@media (max-width: 850px) {
+  html {
+    margin-left: 10px;
+    margin-right: 10px; }
   .menu-main a {
     display: none; }
+  .navbar-logo > img {
+    width: 85px;
+    height: 85px;
+    margin-left: 0; }
   .menu-main a.icon {
     float: right;
     margin-top: auto;
@@ -147,27 +183,31 @@ footer {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center; }
-  .grid .more {
-    width: 100px;
-    height: 30px;
-    background-color: rgba(145, 0, 0, 0.78);
-    border: 1px solid rgba(145, 0, 0, 0.78);
-    border-radius: 4px;
-    color: white;
-    margin-left: auto;
-    margin-right: auto; }
-  .grid .dirName {
-    margin-left: auto;
-    margin-right: auto; }
-  .grid .dirItem {
-    margin-left: auto;
-    margin-right: auto; }
-  .grid .dirText {
-    color: white;
-    background-color: rgba(153, 153, 153, 0.7);
-    border: 1px solid rgba(153, 153, 153, 0.57);
-    border-radius: 4px;
-    padding: 2px; }
+
+.more {
+  width: 100px;
+  height: 30px;
+  background-color: rgba(145, 0, 0, 0.78);
+  border: 1px solid rgba(145, 0, 0, 0.78);
+  border-radius: 4px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto; }
+
+.dirName {
+  margin-left: auto;
+  margin-right: auto; }
+
+.dirItem {
+  margin-left: auto;
+  margin-right: auto; }
+
+.dirText {
+  color: white;
+  background-color: rgba(153, 153, 153, 0.7);
+  border: 1px solid rgba(153, 153, 153, 0.57);
+  border-radius: 4px;
+  padding: 2px; }
 
 article {
   margin-top: 30px;
@@ -175,7 +215,8 @@ article {
   margin-left: 50px;
   border: 3px solid black;
   border-radius: 7px;
-  padding: 15px; }
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.06); }
 
 footer {
   display: block;
@@ -214,7 +255,7 @@ footer {
   .gallCont ul li a img {
     max-width: 100%; }
 
-#Comments {
+#DirForm {
   margin-bottom: 30px; }
 
 @keyframes fade-in {
@@ -230,3 +271,6 @@ footer {
   height: 90vh;
   width: auto;
   animation: fade-in .3s ease; }
+
+.request > label {
+  margin-top: 10px; }
