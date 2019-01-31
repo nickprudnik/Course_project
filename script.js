@@ -52,10 +52,11 @@ document.getElementById("submit").onclick = function (){
         document.getElementById("request_name").innerHTML = storedValue;
         document.getElementById("openModal").style.display = "block"
     }
+
 };
-document.getElementById("close").onclick = function (){
-    document.getElementById("openModal").style.display = "none"
-};
+document.getElementById("close").onclick = function () {
+    document.getElementById("openModal").style.display = "none";
+}
 document.getElementById("too_close").onclick = function (){
     document.getElementById("openModal").style.display = "none"
 };
